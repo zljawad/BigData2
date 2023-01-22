@@ -11,7 +11,7 @@ from kafka import KafkaProducer
 
 async def echo(websocket):
     #async for message in websocket:
-    api = "https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=30.427755&lon=-9.598107&appid=1d24a7642028701ea76d7f6b86ee4705"
+    api = "https://pro.openweathermap.org/data/2.5/forecast/hourly?lat=30.427755&lon=-9.598107&appid=id"
     response_API = requests.get(api)
     data = response_API.text
     parse_json = json.loads(data)
