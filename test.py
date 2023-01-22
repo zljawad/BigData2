@@ -10,7 +10,7 @@ if __name__ == "__main__":
     client = MongoClient()
 
     # Récupération des données météorologique 
-    response_API = requests.get("https://api.openweathermap.org/data/2.5/weather?lat=30.427755&lon=-9.598107&appid=1d24a7642028701ea76d7f6b86ee4705")
+    response_API = requests.get("https://api.openweathermap.org/data/2.5/weather?lat=30.427755&lon=-9.598107&appid=id")
     data = response_API.text
     parse_json = json.loads(data)
     temp = parse_json['main']['temp']
